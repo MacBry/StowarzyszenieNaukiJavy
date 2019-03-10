@@ -1,4 +1,4 @@
-package com.mac.bry.simpleTodo.utilitis;
+package com.mac.bry.simpleTodo.printProcessors;
 
 import java.util.List;
 
@@ -28,7 +28,7 @@ public class TaskPrintProcessor {
 
 		for (Task task : tasks) {
 			System.out.printf("|| %-10d || %-10d || %-10d || %-20s || %-50s || %-20tD || %-20s ||", lp,
-					task.getTaskID(), task.getUser().getId(), task.getTaskName(), task.getTaskDescription(),
+					task.getTaskID(), task.getUser().getUserID(), task.getTaskName(), task.getTaskDescription(),
 					task.getDateOfCompletion(), task.isTaskStatus());
 			System.out.println();
 		}

@@ -23,6 +23,8 @@
 
 		<!-- Set the current session context -->
 		<property name="current_session_context_class">thread</property>
+		
+		<property name="hibernate.query.substitutions">true 1, false 0</property>
  
     </session-factory>
 
